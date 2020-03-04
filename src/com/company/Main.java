@@ -27,6 +27,8 @@ public class Main {
         System.out.println();
         task9Class2.changeOrderInArray();
         task9Class2.printArray();
+        System.out.println();
+        task9Class2.countUnicElements();
     }
 
     private static int letsScan(){

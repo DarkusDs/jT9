@@ -2,7 +2,9 @@ package com.company;
 
 
 
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
 public class Task9Class2 {
     private int numberOfElements = 0;
@@ -38,8 +40,13 @@ public class Task9Class2 {
 
     public void countUnicElements(){
         int [] unicElements;
-        for (int i = 0; i < this.arrayF.length; i++) {
-
+        Set set = new HashSet();
+        int count = 0;
+        for(int i = 0; i<this.arrayF.length; i++) {
+            if(set.add(this.arrayF[i])) {
+                count++;
+                System.out.println(this.arrayF[i]);
+            }
         }
     }
 
