@@ -29,12 +29,25 @@ public class Main {
         task9Class2.printArray();
         System.out.println();
         task9Class2.countUnicElements();
+        System.out.println("======================================================");
+        String[] myStringArray = {"a", "ar", "arr", "arra", "array", "array1", "array2"};
+        Task9Class3IfTheTaskAboutArrayWithElementsEqualsLenght task9Class3 = new Task9Class3IfTheTaskAboutArrayWithElementsEqualsLenght(myStringArray, 6);
+        task9Class3.sortPrimaryArray();
+        task9Class3.printPrimaryArray();
+        task9Class3.printSecondaryArray();
+        task9Class3.getStringByInputIndex(letsScan()-1);
+        String[] myStringArray2 = {"b", "ba", "bar", "barr", "barra", "barrak", "barrat", "berret"};
+        Task9Class3IfTheTaskAboutArrayWithElementsEqualsLenght task9Clas3 = new Task9Class3IfTheTaskAboutArrayWithElementsEqualsLenght(myStringArray2, 6);
+        task9Clas3.sortPrimaryArray();
+        task9Clas3.summ(task9Class3);
     }
+
 
     private static int letsScan(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("введіть число:");
         return scanner.nextInt();
     }
+
 
 }
